@@ -1,0 +1,28 @@
+# Dependencies
+node_modules
+
+# Nuxt build / generate output
+.nuxt
+dist
+.output
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Env
+.env
+.env.*
+
+# Editor / OS
+.DS_Store
+.idea
+.vscode/*
+!.vscode/launch.json
+*.swp
+
+# Cache
+.cache
+.claude
