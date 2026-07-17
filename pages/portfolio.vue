@@ -74,13 +74,13 @@
       </div>
       <div class="sort-wrap">
         <div ref="sortDd" class="sort-dd">
-          <button type="button" class="sort-trigger text-s-24" @click="sortOpen = !sortOpen">
+          <button type="button" class="sort-trigger text-s-24 text-w-400" @click="sortOpen = !sortOpen">
             <span>{{ currentSortLabel }}</span>
             <i class="bi color-6B7280" :class="sortOpen ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
           </button>
           <ul v-show="sortOpen" class="sort-menu">
             <li v-for="opt in sortOptions" :key="opt.value"
-              class="sort-option text-s-24"
+              class="sort-option text-s-24 text-w-400"
               :class="{ 'bg-EBF8FF color-2DA3FD': sort === opt.value }"
               @click="selectSort(opt.value)">
               {{ opt.label }}
@@ -294,10 +294,12 @@ export default {
     document.addEventListener('click', this.onDocClick)
     this.$nextTick(this.updateFilterArrows)
     window.addEventListener('resize', this.updateFilterArrows)
+    document.documentElement.classList.add('portfolio-light-scroll')
   },
   beforeDestroy() {
     document.removeEventListener('click', this.onDocClick)
     window.removeEventListener('resize', this.updateFilterArrows)
+    document.documentElement.classList.remove('portfolio-light-scroll')
   }
 }
 </script>
@@ -692,4 +694,28 @@ export default {
     0px 32px 9px 0px #6783bc00;
 }
 .last .card-body { padding: 24px; }
+</style>
+
+<!-- Lighter page scrollbar (only while on the portfolio list page) -->
+<style>
+html.portfolio-light-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #E5E7EB transparent;
+}
+html.portfolio-light-scroll::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+html.portfolio-light-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+html.portfolio-light-scroll::-webkit-scrollbar-thumb {
+  background-color: #E5E7EB;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+html.portfolio-light-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: #D1D5DB;
+}
 </style>
