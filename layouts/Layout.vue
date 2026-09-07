@@ -593,6 +593,24 @@
                               </p>
                             </div>
                           </a>
+                          <nuxt-link :to="localePath('/solutions/wizemoves/hr-consulting')"
+                            @mouseleave.native="menu = ''" @mouseover.native="menu = 'HR Consulting'"
+                            class="row px-2 py-3 bt-col-2">
+                            <div v-if="menu !== 'HR Consulting'" class="col-2 align-self-center">
+                              <img src="../assets/SolutionsWizemoves/menu/Wizemove/users.svg" alt="users.svg" />
+                            </div>
+                            <div v-else class="col-2 align-self-center">
+                              <img src="../assets/SolutionsWizemoves/menu/Wizemove/users-hover.svg" alt="users.svg" />
+                            </div>
+                            <div class="col-10">
+                              <p class="text-s-24 font-df mb-0" :class="{ 'font-md': menu === 'HR Consulting' }">
+                                HR Consulting
+                              </p>
+                              <p class="text-s-20 mb-0" :class="{ 'bt-col-2-hover': menu === 'HR Consulting' }">
+                                ที่ปรึกษางานทรัพยากรบุคคล HROD &amp; HRBP
+                              </p>
+                            </div>
+                          </nuxt-link>
                         </div>
                         <div v-if="menuMein === 'LINE Agency'" class="px-3 line-agency">
                           <span class="text-w-700 text-s-20 color-6B7280 ms-2">บริการ</span>
@@ -799,6 +817,18 @@
                               วิเคราะห์ข้อมูลเชิงลึก เพื่อให้ คุณเข้าใจลูกค้าและตลาด
                               ช่วยให้มองเห็นโอกาสทางการตลาดใหม่ๆ ในการ
                               ต่อยอดธุรกิจให้เติบโต
+                            </p>
+                          </div>
+                          <div v-if="menu === 'HR Consulting'" class="px-3 py-3 bt-col-3">
+                            <h2 class="font-bd text-s-36 color-1F2937 mb-0">
+                              HR Consulting
+                            </h2>
+                            <p class="text-s-24 color-6B7280 mb-0">
+                              ที่ปรึกษางานทรัพยากรบุคคลครบวงจร ทั้ง HROD และ HRBP
+                              ช่วยออกแบบโครงสร้างองค์กร
+                              วางระบบบริหารคนให้สอดคล้องกับกลยุทธ์ธุรกิจ
+                              พัฒนาศักยภาพทีมงาน และวางระบบประเมินผลที่วัดได้จริง
+                              เพื่อให้องค์กรของคุณเติบโตอย่างยั่งยืนด้วยคนที่ใช่
                             </p>
                           </div>
                         </div>
@@ -1108,7 +1138,9 @@ a {
 
 ul li:hover>ul,
 ul li ul:hover {
-  height: 530px !important;
+  /* grow with the menu content so extra items don't overflow the panel */
+  height: auto !important;
+  min-height: 530px !important;
 }
 
 .dropdown {

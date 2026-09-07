@@ -195,6 +195,12 @@
                                 <p class="text-s-24 font-df mb-0">Data Analytics</p>
                                 <span class="text-s-20 font-df color-9CA3AF">รับวิเคราะห์ข้อมูล</span>
                             </li>
+                            <nuxt-link @click.native="$emit('close')" to="/solutions/wizemoves/hr-consulting" class="text-decoration-none w-100">
+                            <li class="mt-2 mb-4">
+                                <p class="text-s-24 font-df mb-0">HR Consulting <span class="ms-2 mb-1 btn-new">New</span></p>
+                                <span class="text-s-20 font-df color-9CA3AF">ที่ปรึกษางานทรัพยากรบุคคล HROD &amp; HRBP</span>
+                            </li>
+                            </nuxt-link>
                         </ul>
                         </transition>
                     </li>
@@ -404,6 +410,16 @@ li {
   border: 1px solid #FEF3C7;
   padding: 0px 8px;
   color: #D97706;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 16px;
+}
+
+.btn-new{
+  background-color: #ECFDF5;
+  border: 1px solid #D1FAE5;
+  padding: 0px 8px;
+  color: #059669;
   font-size: 18px;
   font-weight: 500;
   border-radius: 16px;
