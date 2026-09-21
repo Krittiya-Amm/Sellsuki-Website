@@ -590,13 +590,13 @@
           <div class="promo-actions">
             <button type="button" class="promo-btn promo-btn-no" data-tag="martech_promo_not_interested"
               @click="closePromo">
-              ไม่สนใจ
+              ไว้ภายหลัง
             </button>
             <!-- เปิดแชท LINE ในแท็บใหม่ แล้วปิด popup ทิ้ง (ถือว่าลูกค้าตอบสนองแล้ว)
                  rel="noopener" กัน window.opener ไม่ให้แท็บปลายทางเข้าถึงหน้านี้ได้ -->
             <a class="promo-btn promo-btn-yes" data-tag="martech_promo_interested" :href="promoLineUrl"
               target="_blank" rel="noopener noreferrer" @click="closePromo">
-              สนใจ
+              ปรึกษาทีมงานฟรี
             </a>
           </div>
         </div>
@@ -1098,6 +1098,15 @@ export default {
 
   .promo-btn-yes {
     font-size: 20px;
+  }
+}
+
+/* จอแคบมาก (เช่น iPhone SE รุ่นแรก / 320px) กล่องเหลือ ~280px
+   ป้ายปุ่มที่ยาวขึ้น ("ปรึกษาทีมงานฟรี") ชนขอบจนล้น จึงลดระยะขอบในปุ่ม
+   เพื่อคืนพื้นที่ให้ตัวอักษรพอดีโดยไม่ต้องย่อฟอนต์ */
+@media (max-width: 340px) {
+  .promo-btn {
+    padding: 0 10px;
   }
 }
 
