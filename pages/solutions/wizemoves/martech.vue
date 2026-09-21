@@ -580,6 +580,28 @@
     <section class="section-spacing">
       <CardContact page="Martech" />
     </section>
+
+    <!-- ===== Promo Popup : shows after the user scrolls down a bit ===== -->
+    <transition name="promo-fade">
+      <div v-if="showPromo" class="promo-overlay" @click.self="closePromo">
+        <div class="promo-box" role="dialog" aria-modal="true" aria-label="โปรโมชัน Package Starter">
+          <button type="button" class="promo-close" aria-label="ปิดโปรโมชัน" @click="closePromo">&times;</button>
+          <img class="promo-img" :src="promoImage" alt="Package Starter ลดแรง เกินต้าน! เหลือเพียง 999 บาทต่อเดือน" />
+          <div class="promo-actions">
+            <button type="button" class="promo-btn promo-btn-no" data-tag="martech_promo_not_interested"
+              @click="closePromo">
+              ไม่สนใจ
+            </button>
+            <!-- เปิดแชท LINE ในแท็บใหม่ แล้วปิด popup ทิ้ง (ถือว่าลูกค้าตอบสนองแล้ว)
+                 rel="noopener" กัน window.opener ไม่ให้แท็บปลายทางเข้าถึงหน้านี้ได้ -->
+            <a class="promo-btn promo-btn-yes" data-tag="martech_promo_interested" :href="promoLineUrl"
+              target="_blank" rel="noopener noreferrer" @click="closePromo">
+              สนใจ
+            </a>
+          </div>
+        </div>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -626,6 +648,13 @@ export default {
       ],
       animation1: false,
       showDiv: false,
+      showPromo: false,
+      promoDismissed: false,
+      promoImage: require('~/assets/SolutionsWizemoves/Martech/WM_Martech_Package_Landing_page_Pro999.webp'),
+      /* เปิดแชท LINE OA @wm.martech พร้อมเติมข้อความตั้งต้นให้ลูกค้า
+         ส่วน query เข้ารหัสไว้แล้ว ถอดออกมาได้ว่า "สนใจสอบถามโปรโมชั่นทำเว็บไซต์Landingpage999"
+         (ต้องเข้ารหัสเพราะภาษาไทยอยู่นอกชุดอักขระที่ URL รองรับโดยตรง) */
+      promoLineUrl: 'https://line.me/R/oaMessage/%40wm.martech/?%E0%B8%AA%E0%B8%99%E0%B9%83%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%96%E0%B8%B2%E0%B8%A1%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%82%E0%B8%A1%E0%B8%8A%E0%B8%B1%E0%B9%88%E0%B8%99%E0%B8%97%E0%B8%B3%E0%B9%80%E0%B8%A7%E0%B9%87%E0%B8%9A%E0%B9%84%E0%B8%8B%E0%B8%95%E0%B9%8CLandingpage999',
       activeSection: "PainPoints",
       active: "รับบรีฟ",
       buttons: [
@@ -798,10 +827,19 @@ export default {
     setActiveButton(index) {
       this.activeButtonIndex = index; // Set the active button index
     },
+    closePromo() {
+      this.showPromo = false;
+      this.promoDismissed = true;
+    },
     handleScroll() {
       const scrollY = window.scrollY; // Get the current scroll position
       const threshold = 650; // Define the scroll threshold
       this.showDiv = scrollY > threshold; // Show the div if scrolled beyond the threshold
+
+      // แสดง popup โปรโมชันเมื่อผู้ใช้เลื่อนจอลงไปสักพัก (ครั้งเดียวต่อ session)
+      if (!this.promoDismissed && !this.showPromo && scrollY > 900) {
+        this.showPromo = true;
+      }
 
       let currentScrollY = window.scrollY;
 
@@ -836,6 +874,278 @@ export default {
 
 <style scoped>
 @import url('~/assets/styles/css/customNew.css');
+
+/* ===== Promo Popup ===== */
+.promo-overlay {
+  position: fixed;
+  inset: 0;
+  /* ต้องสูงกว่าแบนเนอร์คุกกี้ (.card-position ใช้ z-index 99999)
+     ไม่งั้นแบนเนอร์จะบังแถบปุ่มจนกดไม่ได้เลยสำหรับผู้ใช้ที่เพิ่งเข้าเว็บครั้งแรก
+     ผู้ใช้ยังปิด popup ได้ตลอด (ปุ่ม X หรือคลิกพื้นหลัง) แล้วแบนเนอร์จะกลับมาใช้งานได้ตามปกติ */
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  /* ใช้เบลอเพื่อสื่อว่าแตะพื้นหลังเพื่อปิดได้ */
+  background: rgba(24, 10, 48, 0.68);
+  backdrop-filter: blur(4px);
+}
+
+.promo-box {
+  position: relative;
+  width: 100%;
+  /* จอเตี้ย (เช่น มือถือแนวนอน) ให้ย่อ "ความกว้าง" ตามความสูงที่เหลือ
+     ไม่งั้นรูปจะถูกบีบจนเกิดแถบว่างซ้ายขวา
+     136px = padding ของ overlay (40) + ความสูงแถบปุ่ม (48 + padding 24*2 = 96) ; 0.8 = สัดส่วนรูป 2000/2500 */
+  max-width: min(520px, calc((100vh - 136px) * 0.8));
+  max-width: min(520px, calc((100dvh - 136px) * 0.8));
+  max-height: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  overflow: hidden;
+  /* พื้นหลังโทนม่วงเข้มให้ต่อเนื่องกับภาพโปรโมชัน */
+  background: #190B45;
+  box-shadow: 0 20px 50px rgba(20, 6, 45, 0.45);
+}
+
+.promo-img {
+  display: block;
+  width: 100%;
+  min-height: 0;
+  flex: 0 1 auto;
+  object-fit: contain;
+}
+
+/* ลอยทับมุมขวาบนของภาพ เพื่อไม่ให้ popup สูงขึ้น */
+.promo-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.18s ease, border-color 0.18s ease;
+}
+
+/* ขยายพื้นที่กดให้ถึง 44px ตามมาตรฐาน touch target โดยไม่เปลี่ยนขนาดที่มองเห็น */
+.promo-close::after {
+  content: '';
+  position: absolute;
+  inset: -6px;
+}
+
+.promo-close:hover {
+  background: rgba(255, 255, 255, 0.28);
+  border-color: rgba(255, 255, 255, 0.75);
+}
+
+.promo-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  /* 24px ไม่ใช่แค่ระยะขอบ แต่เป็น "พื้นที่ให้แสงฟุ้ง" ด้วย
+     เพราะ .promo-box ตั้ง overflow:hidden ไว้ เงาที่ล้นออกนอกกล่องจะถูกตัดทิ้ง
+     ถ้าเหลือแค่ 16px แสงเรืองของปุ่มหลักจะโดนตัดจนแทบไม่เห็นผล */
+  padding: 24px;
+  /* ไล่สีให้ตรงกับขอบล่างของภาพ เพื่อไม่ให้เห็นรอยต่อ
+     (เก็บค่าจากพิกเซลแถวที่ 4 จากล่างของรูป เลี่ยงขอบที่ถูก anti-alias) */
+  background: linear-gradient(90deg,
+      #190B45 0%,
+      #230A52 12.5%,
+      #300F5E 25%,
+      #1C0D49 37.5%,
+      #150C3A 50%,
+      #180E3C 62.5%,
+      #260C54 75%,
+      #420C79 87.5%,
+      #500F82 100%);
+}
+
+.promo-btn {
+  box-sizing: border-box;
+  /* ตรึงความสูงไว้ ปุ่มสองตัวจะได้สูงเท่ากันแม้ใช้ขนาดตัวอักษรต่างกัน */
+  height: 48px;
+  /* ใส่ border โปร่งใสไว้ที่ปุ่มทุกตัว เพื่อให้ความสูงเท่ากันพอดี */
+  border: 1px solid transparent;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  font-family: 'Heavent-med', sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  white-space: nowrap;
+  cursor: pointer;
+  /* ปุ่ม "สนใจ" เป็น <a> จึงต้องล้างเส้นใต้ที่เบราว์เซอร์ใส่มาให้ลิงก์ */
+  text-decoration: none;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease,
+    color 0.18s ease, border-color 0.18s ease;
+}
+
+.promo-btn:active {
+  transform: scale(0.97);
+}
+
+.promo-btn:focus-visible {
+  outline: 2px solid #C4B5FD;
+  outline-offset: 2px;
+}
+
+/* ปุ่มหลัก : ใช้สีทองซึ่งเป็นสีเน้นในภาพโปรโมชัน ตัดกับพื้นม่วงได้ชัด
+   เน้นด้วย 4 ทาง พร้อมกัน = กว้างกว่า + ตัวหนากว่า + ตัวใหญ่กว่า + มีแสงเรือง
+   (ตามหลัก visual-hierarchy : ลำดับความสำคัญต้องสื่อด้วยหลายมิติ ไม่ใช่สีอย่างเดียว) */
+.promo-btn-yes {
+  flex: 2.4 1 0;
+  color: #2A1450;
+  /* Heavent-body = DB HeaventRounded Bold ซึ่งหน้าเว็บโหลดไว้อยู่แล้ว ไม่ต้องดาวน์โหลดเพิ่ม */
+  font-family: 'Heavent-body', sans-serif;
+  font-size: 22px;
+  background: linear-gradient(90deg, #F5A800 0%, #FFC93C 100%);
+  /* เงาสามชั้น : inset ด้านบนทำให้ปุ่มดูนูนวาว / ชั้นกลางให้ขอบคม / ชั้นนอกเป็นแสงเรืองสีทอง */
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6),
+    0 4px 14px rgba(240, 160, 0, 0.55),
+    0 0 44px rgba(255, 200, 80, 0.55);
+  /* ครอบแถบแสงที่วิ่งผ่านไม่ให้ล้นออกนอกทรงแคปซูล */
+  position: relative;
+  overflow: hidden;
+}
+
+.promo-btn-yes:hover {
+  /* CSS ส่วนกลางของเว็บมี a:hover { color: unset !important } อยู่
+     ซึ่ง !important ชนะทุก specificity ถ้าไม่สู้กลับ สีตัวอักษรตอน hover
+     จะเพี้ยนจากม่วงเข้ม (#2A1450) ไปเป็นเกือบดำตามสีที่สืบทอดมาจากพาเรนต์ */
+  color: #2A1450 !important;
+  background: linear-gradient(90deg, #FFB300 0%, #FFD65C 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    0 6px 18px rgba(240, 160, 0, 0.7),
+    0 0 56px rgba(255, 200, 80, 0.7);
+}
+
+/* แถบแสงเฉียงวิ่งผ่านปุ่มเป็นจังหวะ เพื่อดึงสายตามาที่ CTA หลัก
+   วิ่ง 1.4 วิ แล้วหยุดพัก 2.6 วิ ไม่ให้กวนสายตา */
+.promo-btn-yes::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 38%;
+  pointer-events: none;
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.55) 50%,
+      rgba(255, 255, 255, 0) 100%);
+  transform: translateX(-140%) skewX(-20deg);
+  animation: promo-shine 4s ease-in-out 1.2s infinite;
+}
+
+@keyframes promo-shine {
+  0% {
+    transform: translateX(-140%) skewX(-20deg);
+  }
+
+  35%,
+  100% {
+    transform: translateX(340%) skewX(-20deg);
+  }
+}
+
+/* ปุ่มรอง : ลดน้ำหนักลงเป็นแบบ ghost (ไม่มีพื้นหลัง) เพื่อถอยให้ปุ่มหลักเด่นขึ้น
+   แต่ยังคงคอนทราสต์ของตัวอักษรไว้เหนือ 4.5:1 ให้อ่านออกชัด */
+.promo-btn-no {
+  flex: 1 1 0;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  color: rgba(255, 255, 255, 0.82);
+  background: transparent;
+}
+
+/* จอที่ความสูงจำกัด : ยอมลดพื้นที่ฟุ้งของแสงลงเหลือ 16px เพื่อแลกกับความสูงที่ประหยัดกว่า
+   (แสงจะเบาลงบ้าง แต่บนจอเตี้ยความพอดีของเลย์เอาต์สำคัญกว่า)
+   และต้องแก้ค่าคงที่ในสูตรความกว้างกล่องให้ตรงกับแถบปุ่มที่บางลง : 40 + (48 + 16*2) = 120 */
+@media (max-height: 620px) {
+  .promo-actions {
+    padding: 16px;
+  }
+
+  .promo-box {
+    max-width: min(520px, calc((100vh - 120px) * 0.8));
+    max-width: min(520px, calc((100dvh - 120px) * 0.8));
+  }
+}
+
+/* จอเตี้ย (มือถือแนวนอน) กล่องจะแคบลงจนปุ่มชนความกว้างขั้นต่ำของตัวอักษร
+   ทำให้สัดส่วน 2.4:1 ใช้ไม่ได้ผล จึงลดระยะขอบในลงเพื่อคืนพื้นที่ให้ flex กระจาย */
+@media (max-height: 520px) {
+  .promo-btn {
+    padding: 0 10px;
+    font-size: 18px;
+  }
+
+  .promo-btn-yes {
+    font-size: 20px;
+  }
+}
+
+.promo-btn-no:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.55);
+}
+
+.promo-fade-enter-active {
+  transition: opacity 0.25s ease;
+}
+
+.promo-fade-leave-active {
+  transition: opacity 0.18s ease;
+}
+
+.promo-fade-enter,
+.promo-fade-leave-to {
+  opacity: 0;
+}
+
+/* ให้กล่องสเกลขึ้นมาแทนการ fade เฉย ๆ เพื่อความต่อเนื่องเชิงพื้นที่ */
+.promo-fade-enter-active .promo-box {
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.promo-fade-enter .promo-box {
+  transform: scale(0.94) translateY(12px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .promo-fade-enter-active .promo-box,
+  .promo-btn {
+    transition: none;
+  }
+
+  .promo-fade-enter .promo-box {
+    transform: none;
+  }
+
+  /* ผู้ใช้ที่ตั้งค่าลดการเคลื่อนไหว ให้ซ่อนแถบแสงไปเลย เหลือแค่ปุ่มนิ่ง ๆ */
+  .promo-btn-yes::before {
+    animation: none;
+    opacity: 0;
+  }
+}
 
 .fade-enter-active,
 .fade-leave-active {
