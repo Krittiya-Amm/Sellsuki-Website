@@ -74,10 +74,10 @@
           </div>
           <div class="px-112">
             <p class="text-s-36 font-bd color-FFFFFF m-auto">
-              เจ็บจริง ทำจริง สเกลสำเร็จจริง!!!
+              เจ็บจริง ทำจริง สเกลสำเร็จจริง
             </p>
             <p class="text-s-24 mt-md-3 mt-1 color-FFFFFF mb-0">
-              เราคือ Growth Partner ที่วางระบบ HR จากประสบการณ์จริง ไม่ใช่ทฤษฎี พาธุรกิจคุณจาก Owner-led สู่ System-led
+              เราคือ Growth Partner ที่วางระบบ HR จากประสบการณ์จริง ไม่ใช่ทฤษฎี<br />พาธุรกิจคุณจาก Owner-led สู่ System-led
             </p>
           </div>
         </div>
@@ -94,10 +94,10 @@
           </div>
           <div class="px-112">
             <p class="text-s-36 font-bd color-FFFFFF m-auto">
-              เลิกเดา... ใช้ Data อุดรอยรั่ว กลยุทธ์บริหารทรัพยากรบุคคล
+              เลิกเดา... ใช้ Data วางกลยุทธ์ทรัพยากรมนุษย์
             </p>
             <p class="text-s-24 mt-md-3 mt-1 color-FFFFFF mb-0">
-              ขับเคลื่อนคนด้วย Structured HR Data ไม่ใช่ความรู้สึก บริหารแม่นยำ ลด Turnover ได้จริง ไม่ใช่แค่ทฤษฎี
+              ขับเคลื่อนคนด้วย Structured HR Data ไม่ใช่ความรู้สึก บริหารแม่นยำ<br />ลด Turnover ได้จริง ไม่ใช่แค่ทฤษฎี
             </p>
           </div>
         </div>
@@ -114,10 +114,10 @@
           </div>
           <div class="px-112">
             <p class="text-s-36 font-bd color-FFFFFF m-auto">
-              ทางลัดสู่ผลกำไร ไม่เน้นเอกสาร สร้าง Productivity ที่วัดผลได้จริง
+              ทางลัดสู่ผลกำไร สร้าง Productivity ที่วัดผลได้จริง
             </p>
             <p class="text-s-24 mt-md-3 mt-1 color-FFFFFF mb-0">
-              ไม่ใช่แค่ระบบงานตามทฤษฎี วางระบบ KPI &amp; OKR แบบ Plug &amp; Play Template ที่ใช้งานจริง แกะกล่องใช้ได้ทันที เปลี่ยนต้นทุนค่าแรงให้เป็นผลกำไร
+              ไม่ใช่แค่ระบบงานตามทฤษฎี วางระบบ KPI &amp; OKR แบบ Plug &amp; Play Template<br />ที่ใช้งานจริง แกะกล่องใช้ได้ทันที เปลี่ยนต้นทุนค่าแรงให้เป็นผลกำไร
             </p>
           </div>
         </div>

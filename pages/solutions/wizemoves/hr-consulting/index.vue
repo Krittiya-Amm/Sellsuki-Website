@@ -53,7 +53,7 @@
                     </div>
                     <p class="font-bd text-s-36 mt-3 color-FFFFFF">
                       เปลี่ยนศักยภาพคนให้เป็นผลลัพธ์ธุรกิจ<br />
-                      ด้วยระบบ HR ที่ SME วัดผลได้จริง
+                      ด้วยกลยุทธ์ HR ที่ SME วัดผลได้จริง
                     </p>
                     <p class="text-s-24 mt-3 color-FFFFFF">
                       วางรากฐานด้วย Structured HR Data และกลยุทธ์
@@ -126,7 +126,7 @@
                 </div>
                 <p class="font-bd text-s-24 mt-2 mb-2 color-FFFFFF">
                   เปลี่ยนศักยภาพคนให้เป็นผลลัพธ์ธุรกิจ<br />
-                  ด้วยระบบ HR ที่ SME วัดผลได้จริง
+                  ด้วยกลยุทธ์ HR ที่ SME วัดผลได้จริง
                 </p>
                 <p class="text-s-20 mb-1 color-FFFFFF">
                   วางรากฐานด้วย Structured HR Data และกลยุทธ์
@@ -308,11 +308,11 @@
             <div class="text-center">
               <img class="img-fluid" style="width: 400px; max-width: 100%;" src="~/assets/SolutionsWizemoves/Consulting/wizemoves-hr-logo.png" alt="WizeMoves HR Business Solutions">
               <p class="text-s-44 font-bd mt-4">หยุดแก้ปัญหาคนเดียว</p>
-              <p class="text-s-24 mb-lg-4 mb-4">หยุดแก้ปัญหาคนเดียว ให้ WizeMoves HR ช่วยวางระบบ HR อัตโนมัติ
+              <p class="text-s-24 mb-lg-4 mb-4">ให้ WizeMoves HR ช่วยวางกลยุทธ์ด้าน HR
                 ทั้ง Structured HR Data, Performance Management และ Employer Branding</p>
               <nuxt-link :to="{ path: '/solutions/wizemoves/business-consulting/af' }"
                 class="btn-gradient text-s-24 font-md py-2" data-tag="pain_points_section_get_free_consultation">
-                <span class="text">ปรึกษาการวางระบบ HR ฟรี</span>
+                <span class="text">ปรึกษาการวางกลยุทธ์ด้าน HR</span>
               </nuxt-link>
             </div>
           </div>
@@ -335,7 +335,7 @@
                 <div class="text-start">
                   <div class="d-lg-block d-md-none">
                     <h2 class="text-s-60 font-bd mb-0">
-                      ทำไมผู้ประกอบการ SME<br />ที่กำลังโต ถึงเลือกวางใจ<br />เคียงข้างไปกับ WizeMoves HR?
+                      ทำไมผู้ประกอบการ SME<br />ที่กำลังโต ถึงเลือกวางใจ<br />ไปกับ WizeMoves HR?
                     </h2>
                     <p class="text-s-24 mt-4 mb-0">
                       เพราะเราคือ “คนทำธุรกิจที่ลองผิดลองถูกจนเจอสูตรสำเร็จ” ไม่ใช่แค่ที่ปรึกษาจากตำรา
@@ -343,7 +343,7 @@
                   </div>
                   <div class="d-lg-none d-md-block">
                     <h2 class="text-s-44 font-bd mb-0">
-                      ทำไมผู้ประกอบการ SME<br />ที่กำลังโต ถึงเลือกวางใจ<br />เคียงข้างไปกับ WizeMoves HR?
+                      ทำไมผู้ประกอบการ SME<br />ที่กำลังโต ถึงเลือกวางใจ<br />ไปกับ WizeMoves HR?
                     </h2>
                     <p class="text-s-24 mt-3 mb-0">
                       เพราะเราคือ “คนทำธุรกิจที่ลองผิดลองถูกจนเจอสูตรสำเร็จ” ไม่ใช่แค่ที่ปรึกษาจากตำรา
@@ -365,7 +365,7 @@
             <div class="col-12 color-FFFFFF fade-in-up" v-intersect>
               <div class="text-start mb-5">
                 <h2 class="text-s-44 font-bd mb-0">
-                  ทำไมผู้ประกอบการ SME ที่กำลังโต<br /> ถึงเลือกวางใจเคียงข้างไปกับ WizeMoves HR?
+                  ทำไมผู้ประกอบการ SME ที่กำลังโต<br /> ถึงเลือกวางใจไปกับ WizeMoves HR?
                 </h2>
                 <p class="text-s-20 mt-3 mb-0">
                   เพราะเราคือ “คนทำธุรกิจที่ลองผิดลองถูกจนเจอสูตรสำเร็จ” ไม่ใช่แค่ที่ปรึกษาจากตำรา
@@ -387,17 +387,17 @@
             <div class="col-12 text-center color-FFFFFF d-flex" style="height: 370px">
               <div class="my-auto mx-auto d-lg-block d-md-none">
                 <h2 class="text-s-60 mb-0 font-bd mt-auto mx-auto">
-                  WizeMoves HR ที่ปรึกษาการพัฒนาทรัพยากรมนุษย์<br />และการวางระบบ HR เพื่อสเกลธุรกิจอย่างยั่งยืน
+                  WizeMoves HR ที่ปรึกษาการพัฒนาทรัพยากรมนุษย์<br />และการวางกลยุทธ์ HR เพื่อสเกลธุรกิจอย่างยั่งยืน
                 </h2>
-                <p class="text-s-28 mb-0">เพราะระบบ HR ที่ดี... ไม่ใช่แค่แก้ปัญหาความขัดแย้งรายวัน
+                <p class="text-s-28 mb-0">เพราะกรอบการทำงาน HR ที่ดี... ไม่ใช่แค่แก้ปัญหาความขัดแย้งรายวัน
                   แต่คือรากฐาน System-led ที่พิสูจน์ได้
                 </p>
               </div>
               <div class="my-auto mx-auto d-lg-none d-md-block">
                 <h2 class="text-s-44 mb-0 font-bd mt-auto mx-auto">
-                  WizeMoves HR ที่ปรึกษาการพัฒนาทรัพยากรมนุษย์<br />และการวางระบบ HR เพื่อสเกลธุรกิจอย่างยั่งยืน
+                  WizeMoves HR ที่ปรึกษาการพัฒนาทรัพยากรมนุษย์<br />และการวางกลยุทธ์ HR เพื่อสเกลธุรกิจอย่างยั่งยืน
                 </h2>
-                <p class="text-s-20 mb-0 mt-3">เพราะระบบ HR ที่ดี... ไม่ใช่แค่แก้ปัญหาความขัดแย้งรายวัน<br />
+                <p class="text-s-20 mb-0 mt-3">เพราะกรอบการทำงาน HR ที่ดี... ไม่ใช่แค่แก้ปัญหาความขัดแย้งรายวัน<br />
                   แต่คือรากฐาน System-led ที่พิสูจน์ได้</p>
               </div>
             </div>
@@ -406,10 +406,10 @@
             <div class="col-12 text-center color-FFFFFF d-flex ps-3 pe-3" style="height: 500px">
               <div class="my-auto mx-auto">
                 <h2 class="text-s-44 mb-0 font-bd mt-auto mx-auto">
-                  WizeMoves HR<br /> ที่ปรึกษาการพัฒนาทรัพยากรมนุษย์<br /> และการวางระบบ HR<br />
+                  WizeMoves HR<br /> ที่ปรึกษาการพัฒนาทรัพยากรมนุษย์<br /> และการวางกลยุทธ์ HR<br />
                   เพื่อสเกลธุรกิจอย่างยั่งยืน
                 </h2>
-                <p class="text-s-20 mt-3 mb-0">เพราะระบบ HR ที่ดี...<br />
+                <p class="text-s-20 mt-3 mb-0">เพราะกรอบการทำงาน HR ที่ดี...<br />
                   ไม่ใช่แค่แก้ปัญหาความขัดแย้งรายวัน<br />แต่คือรากฐาน System-led ที่พิสูจน์ได้</p>
               </div>
             </div>
@@ -433,7 +433,8 @@
         <div class="row align-items-center zoning-layout">
           <!-- ลูกศร trending ขึ้น (เดคอเรชันทับการ์ด) -->
           <div class="zoning-arrow" aria-hidden="true">
-            <svg viewBox="0 0 480 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 480 720" fill="none" xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="xMinYMax meet">
               <defs>
                 <linearGradient id="zoneArrowGrad" x1="0.15" y1="1" x2="0.85" y2="0">
                   <stop offset="0" stop-color="#FBFAFF" />
@@ -448,17 +449,15 @@
           <!-- left : ข้อความหัวข้อ + มาสคอต -->
           <div class="col-12 text-center text-lg-start zoning-intro-col zoning-col-left">
             <h2 class="font-bd color-1F2937 mb-0 text-s-60 d-none d-lg-block">
-              ตรวจโรคองค์กรด้วย <span class="text-nowrap">Service Zoning</span>
+              วิเคราะห์ปัญหาองค์กรด้วย <span class="text-nowrap">Service Zoning</span>
             </h2>
             <h2 class="font-bd color-1F2937 mb-0 text-s-44 d-lg-none">
-              ตรวจโรคองค์กรด้วย <span class="text-nowrap">Service Zoning</span>
+              วิเคราะห์ปัญหาองค์กรด้วย <span class="text-nowrap">Service Zoning</span>
             </h2>
             <p class="text-s-24 font-df color-6B7280 mb-0 mt-3 zoning-intro">
               แต่ละองค์กรมี “ความพร้อม” และ “รอยรั่ว” ต่างกัน
-              เราจึงประเมินตาม <span class="font-md color-1F2937">4 Performance Zones</span>
+              เราจึงประเมินตาม<br /><span class="font-md color-1F2937">Performance Zones</span>
               เพื่อออกแบบบริการที่ตอบโจทย์และคุ้มค่าที่สุด
-              มาเช็กว่าตอนนี้พนักงานคุณอยู่โซนไหน
-              แมตช์โซลูชันที่ใช่ ให้ตรงขนาดองค์กรและงบประมาณ
             </p>
             <div class="zoning-mascot mt-4">
               <img src="~/assets/SolutionsWizemoves/Consulting/wizemoves.png" alt="WizeMoves mascot"
@@ -588,7 +587,7 @@
             <div class="d-none d-xl-block">
               <p class="text-s-24 font-df mb-0 mt-3">องค์กรที่เพิ่งเริ่มต้นไม่จำเป็นต้องรอมีฝ่าย HR เต็มรูปแบบ
                 <span class="font-bd">WizeMoves</span> ออกแบบ
-                <span class="font-bd">Product ด้าน HR ที่เริ่มใช้ได้ทันที</span>
+                <span class="font-bd">Product ด้าน HR<br />ที่เริ่มใช้ได้ทันที</span>
                 ตั้งแต่ชุดเอกสารและระบบพื้นฐาน ไปจนถึงเครื่องมือที่ช่วยตอบคำถามพนักงานแทนคุณ
               </p>
               <p class="text-s-24 font-df mb-0 mt-4">ทุก Product ถอดมาจากปัญหาจริงที่เจ้าของธุรกิจเจอบ่อยที่สุด
@@ -598,7 +597,7 @@
             </div>
             <div class="d-block d-xl-none">
               <p class="text-s-20 font-df mb-0 mt-2">องค์กรที่เพิ่งเริ่มต้นไม่จำเป็นต้องรอมีฝ่าย HR เต็มรูปแบบ
-                WizeMoves ออกแบบ Product ด้าน HR ที่เริ่มใช้ได้ทันที ตั้งแต่ชุดเอกสารและระบบพื้นฐาน
+                WizeMoves ออกแบบ Product ด้าน HR<br />ที่เริ่มใช้ได้ทันที ตั้งแต่ชุดเอกสารและระบบพื้นฐาน
                 ไปจนถึงเครื่องมือที่ช่วยตอบคำถามพนักงานแทนคุณ</p>
               <p class="text-s-20 font-df mb-0 mt-4">ทุก Product ถอดมาจากปัญหาจริงที่เจ้าของธุรกิจเจอบ่อยที่สุด
                 ลดความเสี่ยงด้านกฎหมายแรงงาน ลดงานซ้ำซ้อน และทำให้คุณกลับไปโฟกัสงานที่สร้างการเติบโตได้จริง</p>
@@ -624,7 +623,7 @@
               </p>
               <p class="text-s-24 font-bd color-1F2937 mb-0 mt-4">ปัญหาที่องค์กรเริ่มต้นเจอบ่อย</p>
               <div class="row mt-4 space-tigger">
-                <div v-for="item in hrTemplateProblems" :key="item.title" class="col-lg-6 col-12 pe-0">
+                <div v-for="item in hrTemplateProblems" :key="item.title" class="col-12 pe-0">
                   <div class="card card-01">
                     <div class="card-body d-flex align-items-center">
                       <span class="svc-card-icon" v-html="item.icon"></span>
@@ -639,7 +638,7 @@
                 <div class="col-12">
                   <a href="https://www.sellsuki.co.th/solutions/wizemoves/hr-consult/hr-template"
                     target="_blank" rel="noopener noreferrer"
-                    class="btn-transparent-violet text-s-24 font-md py-2" data-tag="product_hr_template_view_packages">
+                    class="btn-gradient text-s-24 font-md py-2" data-tag="product_hr_template_view_packages">
                     <span class="text">ดูรายละเอียดแพ็กเกจ</span>
                   </a>
                 </div>
@@ -658,7 +657,6 @@
               <p class="text-s-24 color-1F2937 mb-0 mt-4">
                 พนักงานสอบถามผ่านไลน์ตลอดทั้งวัน ลาพักร้อนยังไง เบิกจ่ายยังไง
                 จนเจ้าของธุรกิจไม่มีเวลาทำงานสำคัญ
-                ยิ่งองค์กรเติบโต ยิ่งเสียเวลากับคำถามที่ซ้ำซ้อน
               </p>
               <p class="text-s-24 color-1F2937 mb-0">
                 เปลี่ยน LINE OA ให้เป็น <span class="font-bd">HR Chatbot</span> ที่ตอบคำถามพนักงานได้ไม่จำกัด 24 ชม.
@@ -666,7 +664,7 @@
                 ให้ผู้บริหารดูได้ในคลิกเดียว
               </p>
               <div class="row mt-4 space-tigger">
-                <div v-for="item in hrChatbotFeatures" :key="item.title" class="col-lg-6 col-12 pe-0">
+                <div v-for="item in hrChatbotFeatures" :key="item.title" class="col-12 pe-0">
                   <div class="card card-01">
                     <div class="card-body d-flex align-items-center">
                       <span class="svc-card-icon" v-html="item.icon"></span>
@@ -726,30 +724,30 @@
           </div>
           <div class="col-md-6 col-12">
             <div class="d-none d-xl-block">
-              <p class="text-s-24 font-df mb-0 mt-3">เลือกระดับการดูแลที่ตรงกับสถานการณ์องค์กรคุณ ตั้งแต่
+              <p class="text-s-24 font-df mb-0 mt-3">เลือกระดับการดูแลที่เหมาะกับองค์กรคุณ ตั้งแต่
                 <span class="font-bd">แก้วิกฤตเฉพาะหน้า</span> ไปจนถึง
-                <span class="font-bd">วางกลยุทธ์คนระยะยาว</span></p>
-              <p class="text-s-24 font-df mb-0 mt-4"><span class="font-bd">WizeMoves</span>
+                <span class="font-bd">วางกลยุทธ์ด้านคนระยะยาว</span></p>
+              <p class="text-s-24 font-df mb-0 mt-4"><span class="font-bd">WizeMoves HR</span>
                 ไม่ใช่แค่ที่ปรึกษา แต่เป็นพาร์ทเนอร์ที่ลงมือทำจริงเคียงข้างทีมคุณ
-                ตั้งแต่การวางระบบไปจนถึงการโค้ชผลงานให้เห็นผลที่วัดได้</p>
+                ตั้งแต่การวางโครงสร้างไปจนถึงการโค้ชผลงานให้เห็นผลที่วัดได้</p>
             </div>
             <div class="d-block d-xl-none">
-              <p class="text-s-20 font-df mb-0 mt-2">เลือกระดับการดูแลที่ตรงกับสถานการณ์องค์กรคุณ ตั้งแต่แก้วิกฤตเฉพาะหน้า
-                ไปจนถึงวางกลยุทธ์คนระยะยาว</p>
-              <p class="text-s-20 font-df mb-0 mt-4">WizeMoves ไม่ใช่แค่ที่ปรึกษา
-                แต่เป็นพาร์ทเนอร์ที่ลงมือทำจริงเคียงข้างทีมคุณ ตั้งแต่การวางระบบไปจนถึงการโค้ชผลงานให้เห็นผลที่วัดได้</p>
+              <p class="text-s-20 font-df mb-0 mt-2">เลือกระดับการดูแลที่เหมาะกับองค์กรคุณ ตั้งแต่แก้วิกฤตเฉพาะหน้า
+                ไปจนถึงวางกลยุทธ์ด้านคนระยะยาว</p>
+              <p class="text-s-20 font-df mb-0 mt-4">WizeMoves HR ไม่ใช่แค่ที่ปรึกษา
+                แต่เป็นพาร์ทเนอร์ที่ลงมือทำจริงเคียงข้างทีมคุณ ตั้งแต่การวางโครงสร้างไปจนถึงการโค้ชผลงานให้เห็นผลที่วัดได้</p>
             </div>
           </div>
         </div>
         <div class="mt-5 pt-5">
           <div class="row pt-lg-5 mt-lg-5 pt-0 mt-0">
-            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 pe-0 ps-0 pb-200">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 pe-0 ps-0 pb-200 svc-col-end">
               <template v-for="(item, i) in hrServiceList">
                 <div v-if="i !== 0" :key="item.name + '-space'" class="space-services"></div>
 
                 <img :key="item.name + '-img'" class="img-fluid mb-4 d-block d-md-none"
                   :src="serviceImages[i]" :alt="item.name" />
-                <span :key="item.name + '-sub'" class="text-s-24 font-md text-hl">{{ item.headline }}</span>
+                <span :key="item.name + '-sub'" class="text-s-24 font-md text-hl svc-anchor" :data-svc-index="i">{{ item.headline }}</span>
                 <p :key="item.name + '-title'" class="text-s-52 font-md color-1F2937 mb-0 mt-4">
                   {{ item.name }}
                 </p>
@@ -757,11 +755,12 @@
                   {{ item.desc }}
                 </p>
                 <div :key="item.name + '-cards'" class="row mt-4 space-tigger">
-                  <div v-for="b in item.bullets" :key="b.text" class="col-lg-6 col-12 pe-0">
+                  <div v-for="b in item.bullets" :key="b.text" class="col-12 pe-0">
                     <div class="card card-01">
                       <div class="card-body d-flex align-items-start">
                         <span class="svc-card-icon" v-html="b.icon" aria-hidden="true"></span>
-                        <span class="ms-2 text-s-24 font-df">{{ b.text }}</span>
+                        <!-- pre-line : ให้ \n ในข้อความ bullet ขึ้นบรรทัดใหม่ได้ -->
+                        <span class="ms-2 text-s-24 font-df" style="white-space: pre-line">{{ b.text }}</span>
                       </div>
                     </div>
                   </div>
@@ -769,7 +768,7 @@
                 <div :key="item.name + '-cta'" class="row mt-4">
                   <div class="col-12">
                     <a href="#" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
-                      class="btn-transparent-violet text-s-24 font-md py-2" :data-tag="item.tag">
+                      class="btn-gradient text-s-24 font-md py-2" :data-tag="item.tag">
                       <span class="text">นัดปรึกษาผู้เชี่ยวชาญทันที</span>
                     </a>
                   </div>
@@ -1030,23 +1029,19 @@ export default {
         // { label: "Customers", id: "#Customers", name: "Customers" },
       ],
       activeButtonIndex: null,
-      // Service Zoning: 4 Performance Zones, ordered top (best) -> bottom
+      // Service Zoning: Performance Zones, ordered top (best) -> bottom
       serviceZones: [
         {
           key: 'green', name: 'GREEN ZONE', role: 'TALENT',
-          lead: '', desc: 'มีระบบ HR ที่แข็งแรงและเป็นมาตรฐาน พร้อมต่อยอดด้วยแนวคิดและ Framework HR ใหม่ ๆ เพื่อยกระดับองค์กร'
+          lead: '', desc: 'โครงสร้าง HR แข็งแกร่งและเป็นมาตรฐาน แต่ต้องการอัปเดตแนวคิดและ Framework ใหม่ เพื่อยกระดับองค์กรให้ก้าวหน้ายิ่งขึ้น'
         },
         {
           key: 'yellow', name: 'YELLOW ZONE', role: 'UNLOCKING GROWTH',
-          lead: '', desc: 'มีระบบ HR พื้นฐานรองรับ แต่ยังมีบางส่วนที่ต้องพัฒนาและปรับปรุง เพื่อสร้างระบบ HR เพื่อรองรับการเติบโต'
-        },
-        {
-          key: 'orange', name: 'ORANGE ZONE', role: 'UNDERPERFORM',
-          lead: '', desc: 'ระบบ HR ยังไม่มีโครงสร้าง หรือมีช่องว่างสำคัญที่ส่งผลต่อประสิทธิภาพการทำงาน จำเป็นต้องวางรากฐานและพัฒนาระบบให้เป็นมาตรฐาน'
+          lead: '', desc: 'มีโครงสร้าง HR ที่เป็นรากฐาน แต่ยังไม่ครบทุกส่วน จำเป็นต้องพัฒนาและปรับปรุงเพิ่มเติม เพื่อรองรับการเติบโตของธุรกิจ'
         },
         {
           key: 'red', name: 'RED ZONE', role: 'UNSUCCESSOR',
-          lead: '', desc: 'พบปัญหาหรือจุดบอดด้าน HR ที่ส่งผลกระทบต่อการดำเนินงานและผลลัพธ์ขององค์กร จำเป็นต้องเร่งแก้ไขและวางระบบเพื่อยกระดับประสิทธิภาพอย่างเป็นรูปธรรม'
+          lead: '', desc: 'พบปัญหาหรือจุดบอดด้าน HR ที่ส่งผลกระทบต่อการดำเนินงานและผลลัพธ์ขององค์กร จำเป็นต้องเร่งแก้ไขและวางกลยุทธ์เพื่อยกระดับประสิทธิภาพอย่างเป็นรูปธรรม'
         }
       ],
       hrProducts: [
@@ -1108,7 +1103,7 @@ export default {
           title: '“พนักงานทำงานเรื่อยเปื่อย ไม่มีเป้าหมาย”',
           desc: 'ประเมินผลด้วยความรู้สึก ไม่ใช่ข้อมูล จับต้องประสิทธิภาพจริงไม่ได้',
           solPre: 'เปลี่ยนทุกผลงานให้วัดผลได้ชัดเจน ด้วย',
-          solName: 'ชุดเกราะป้องกันกฎหมายและข้อพิพาทแรงงาน',
+          solName: 'ชุดเครื่องมือประเมินผลและวิเคราะห์ข้อมูล',
           solPost: '',
           icon: '<svg viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg>'
         }
@@ -1120,25 +1115,20 @@ export default {
           icon: '<svg viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-6l-4.5 3.5V15.5H6a2 2 0 0 1-2-2z"/><circle cx="9" cy="9.5" r="0.9" fill="#8B5CF6" stroke="none"/><circle cx="12" cy="9.5" r="0.9" fill="#8B5CF6" stroke="none"/><circle cx="15" cy="9.5" r="0.9" fill="#8B5CF6" stroke="none"/></svg>'
         },
         {
-          title: 'วิเคราะห์ Sentiment',
-          desc: 'วิเคราะห์ sentiment รู้ปัญหาก่อนลุกลาม',
-          icon: '<svg viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 10h.01M15 10h.01"/><path d="M8.5 14.5c.9 1.2 2.1 1.8 3.5 1.8s2.6-.6 3.5-1.8"/></svg>'
-        },
-        {
-          title: 'แนะนำ Action Plan',
-          desc: 'แนะนำ action plan เรียงตาม impact',
+          title: 'Dashboard รายงานผล',
+          desc: 'เพื่อเห็นภาพรวมและนำข้อมูลวิเคราะห์ต่อ',
           icon: '<svg viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16"/><rect x="5" y="13" width="3.5" height="5" rx="1"/><rect x="10.25" y="9" width="3.5" height="9" rx="1"/><rect x="15.5" y="5" width="3.5" height="13" rx="1"/></svg>'
         }
       ],
       hrChatbotTags: ['Fast', 'Lean', 'Insights'],
       activeProduct: 'template',
       // ภาพ mockup ทางขวาของ section Services สลับตามบริการที่กำลังอ่านอยู่
-      currentServiceImage: require('~/assets/SolutionsWizemoves/Consulting/Device-Macbook-Air.png'),
+      // ลำดับภาพต้องตรงกับ hrServices (Blueprint / Transformation / Express)
+      currentServiceImage: require('~/assets/SolutionsWizemoves/HRConsulting/service-blueprint.webp'),
       serviceImages: [
-        require('~/assets/SolutionsWizemoves/Consulting/Device-Macbook-Air.png'),
-        require('~/assets/SolutionsWizemoves/Consulting/Device-Macbook-Air1.png'),
-        require('~/assets/SolutionsWizemoves/Consulting/Device-Macbook-Air2.png'),
-        require('~/assets/SolutionsWizemoves/Consulting/Device-Macbook-Air3.png')
+        require('~/assets/SolutionsWizemoves/HRConsulting/service-blueprint.webp'),
+        require('~/assets/SolutionsWizemoves/HRConsulting/service-transformation.webp'),
+        require('~/assets/SolutionsWizemoves/HRConsulting/service-express.webp')
       ],
       // ไอคอนดึงจาก hrProducts ผ่าน computed hrServiceList (แหล่งเดียว ไม่ซ้ำ)
       hrServices: [
@@ -1147,8 +1137,7 @@ export default {
           headline: 'เลิกแบกบริษัทคนเดียว ให้ระบบทำงานแทนคุณได้จริง',
           desc: 'บริการออกแบบโครงสร้างองค์กรและระบบทรัพยากรบุคคล ผ่านงาน Organization Design ให้ธุรกิจเดินต่อได้จริงในระยะยาว',
           bullets: [
-            { text: 'ได้ Framework ที่ชัดเจนในการวางระบบ HR ขององค์กร', icon: '<svg viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="4.5" rx="1"/><rect x="2.5" y="16.5" width="6" height="4.5" rx="1"/><rect x="15.5" y="16.5" width="6" height="4.5" rx="1"/><path d="M12 7.5v4M5.5 16.5v-2.5h13v2.5M12 14v-2.5"/></svg>' },
-            { text: 'ข้อมูลพนักงานเป็นระบบดิจิทัล พร้อมขยายทีม', icon: '<svg viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.5" rx="7" ry="2.8"/><path d="M5 5.5v6c0 1.5 3.1 2.8 7 2.8s7-1.3 7-2.8v-6"/><path d="M5 11.5v6c0 1.5 3.1 2.8 7 2.8s7-1.3 7-2.8v-6"/></svg>' },
+            { text: 'ได้ Framework ที่ชัดเจนในการแก้ไขปัญหาด้าน HR ขององค์กร', icon:'<svg viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="4.5" rx="1"/><rect x="2.5" y="16.5" width="6" height="4.5" rx="1"/><rect x="15.5" y="16.5" width="6" height="4.5" rx="1"/><path d="M12 7.5v4M5.5 16.5v-2.5h13v2.5M12 14v-2.5"/></svg>' },
             { text: 'พัฒนาโครงสร้างเดิมให้แข็งแรงขึ้น', icon: '<svg viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v16h16"/><path d="M7.5 15l3.5-4 3 2 5-6"/></svg>' }
           ],
           tone: 'p1',
@@ -1160,9 +1149,9 @@ export default {
           headline: 'เปลี่ยนผลงานที่แกว่ง ให้กลายเป็นผลลัพธ์ที่ยั่งยืน',
           desc: 'บริการที่ปรึกษากลยุทธ์ทรัพยากรบุคคลระยะยาว วางระบบ OKR/KPI ควบคู่กับวางกลยุทธ์ Salary Structure และ Employer Branding จัดสรรตามองค์กรของคุณ เพื่อผลลัพธ์ที่วัดผลได้และการเติบโตอย่างยั่งยืน',
           bullets: [
-            { text: 'วางระบบ OKR & KPI พร้อมแผน PIP แก้จุดบอดทีมงาน', icon: '<svg viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4.3"/><circle cx="12" cy="12" r="1.2" fill="#8B5CF6" stroke="none"/></svg>' },
-            { text: 'ออกแบบเงินเดือนและสวัสดิการ อ้างอิงฐานข้อมูลตลาดจริง แข่งขันได้เต็มที่', icon: '<svg viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><line x1="6" y1="9.5" x2="6" y2="14.5"/><line x1="18" y1="9.5" x2="18" y2="14.5"/></svg>' },
-            { text: 'วางแผนคนเก่งและผู้สืบทอดตำแหน่ง สร้างวัฒนธรรมองค์กรที่คนอยากอยู่', icon: '<svg viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="9" r="2.6"/><circle cx="16" cy="9" r="2.6"/><path d="M2.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5"/><path d="M14.5 14.2c.5-.13 1-.2 1.5-.2 3 0 5.5 2 5.5 5"/></svg>' }
+            { text: 'วางระบบ OKR & KPI พร้อมแผนแก้จุดบอดทีม\u2060งาน', icon:'<svg viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4.3"/><circle cx="12" cy="12" r="1.2" fill="#8B5CF6" stroke="none"/></svg>' },
+            { text: 'ออกแบบเงินเดือนและสวัสดิการ อ้างอิงฐานข้อมูลตลาดจริง และปรับให้เหมาะสมกับองค์กร', icon:'<svg viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><line x1="6" y1="9.5" x2="6" y2="14.5"/><line x1="18" y1="9.5" x2="18" y2="14.5"/></svg>' },
+            { text: 'วางแผนคนเก่งและผู้สืบทอดตำแหน่ง\nสร้างวัฒนธรรมองค์กรที่คนอยากอยู่', icon:'<svg viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="9" r="2.6"/><circle cx="16" cy="9" r="2.6"/><path d="M2.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5"/><path d="M14.5 14.2c.5-.13 1-.2 1.5-.2 3 0 5.5 2 5.5 5"/></svg>' }
           ],
           tone: 'p2',
           imageLeft: false,
@@ -1307,27 +1296,8 @@ export default {
       productObserver.observe(section);
     });
 
-    // สลับภาพ mockup ทางขวาของ section Services ตามบริการที่กำลังอ่านอยู่
-    const macbookObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting && entry.intersectionRatio >= 0.3) {
-          const idx = Number(entry.target.dataset.svcIndex);
-          if (!Number.isNaN(idx) && this.serviceImages[idx]) {
-            setTimeout(() => {
-              this.currentServiceImage = this.serviceImages[idx];
-            }, 100);
-          }
-        }
-      });
-    }, {
-      threshold: [0.3, 0.6, 1],
-      rootMargin: '-50px 0px -50px 0px'
-    });
-
-    document.querySelectorAll('#Services .space-tigger').forEach((section, index) => {
-      section.dataset.svcIndex = index;
-      macbookObserver.observe(section);
-    });
+    // ภาพ mockup ของ section Services คำนวณจากตำแหน่งตอน scroll (ดู updateServiceImage)
+    this.updateServiceImage();
   },
   beforeDestroy() {
     window.removeEventListener("scroll", this.handleScroll); // Clean up the listener
@@ -1361,6 +1331,27 @@ export default {
         this.showDiv = false;
       }
       this.lastScrollY = currentScrollY;
+
+      this.updateServiceImage();
+    },
+    /* สลับภาพ mockup ทางขวาของ section Services ตามบริการที่กำลังอ่านอยู่
+       เลือกจาก "บริการสุดท้ายที่หัวข้อเลื่อนผ่านกึ่งกลางจอแล้ว" แทนการดูว่า element ไหนโผล่เข้ามาล่าสุด
+       เพราะแบบเดิมผลขึ้นกับทิศทางการเลื่อน : เลื่อนลงจะเห็นภาพบริการถัดไปก่อนอ่านถึง
+       ส่วนเลื่อนขึ้นได้อีกภาพ ทั้งที่อยู่ตำแหน่งเดียวกัน */
+    updateServiceImage() {
+      const anchors = document.querySelectorAll('#Services .svc-anchor');
+      if (!anchors.length) return;
+      const readingLine = window.innerHeight * 0.5;
+      let idx = 0;
+      anchors.forEach((anchor) => {
+        if (anchor.getBoundingClientRect().top <= readingLine) {
+          idx = Number(anchor.dataset.svcIndex);
+        }
+      });
+      const image = this.serviceImages[idx];
+      if (image && image !== this.currentServiceImage) {
+        this.currentServiceImage = image;
+      }
     },
     handleChange(sectionId) {
       // รับ element ของ section ที่ต้องการ scroll ไป
@@ -2072,12 +2063,19 @@ export default {
   user-select: none;
 }
 
-/* ภาพประกอบ Product ทางขวา (sticky) — จัดวางแบบเดียวกับ mockup ของ Services */
+/* ภาพประกอบ Product ทางขวา (sticky)
+   ใช้กล่องสูงเท่าจอแล้วจัดภาพไว้กลางด้วย flex แทน top:52% + translateY(-50%)
+   เพราะ sticky คำนวณจุดหยุดจากตำแหน่ง "ก่อน" transform : มันคิดว่ากล่องยื่นเลยขอบล่างจอไปอีกครึ่งหนึ่ง
+   จึงหยุดตามเร็วไป ~ครึ่งความสูงภาพ ทำให้ตอนอ่าน Product ตัวสุดท้าย ภาพมือถือเลื่อนหลุดขึ้นไปโดนตัดหัว
+   padding-top 4vh = เลื่อนจุดกึ่งกลางลงมาที่ ~52% ของจอ ให้ตำแหน่งเท่าเดิม
+   margin-top = 245px (ค่าเดิม) - 52vh (ระยะที่ translate เดิมเคยดึงขึ้น) ให้จังหวะตอนเลื่อนเข้า section เหมือนเดิม */
 .svc-sticky {
-  margin-top: 245px;
+  margin-top: calc(245px - 52vh);
   position: sticky;
-  top: 52%;
-  transform: translateY(-50%);
+  top: 0;
+  height: 100vh;
+  padding-top: 4vh;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2092,17 +2090,20 @@ export default {
 @media only screen and (max-width: 600px) {
   .svc-sticky {
     position: relative;
-    transform: none;
     margin-top: 0;
+    height: auto;
+    padding-top: 0;
   }
 }
 
 /* ===== Services : ภาพ mockup ทางขวา (sticky) + การ์ดหัวข้อ ===== */
+/* จัดกึ่งกลางด้วย top: calc(52% - ครึ่งความสูง) แทน translateY(-50%)
+   เพราะ sticky คำนวณจุดหยุดจากตำแหน่งก่อน transform จะปล่อยภาพเร็วไป 200px (ครึ่งความสูงภาพ)
+   ตำแหน่งที่เห็นเท่าเดิม : margin-top 45px = 245px (ค่าเดิม) - 200px ที่ transform เคยดึงขึ้น */
 .sticky-macbook {
-  margin-top: 245px;
+  margin-top: 45px;
   position: sticky;
-  top: 52%;
-  transform: translateY(-50%);
+  top: calc(52% - 200px);
   height: 400px;
   overflow: hidden;
   display: flex;
@@ -2113,8 +2114,17 @@ export default {
 @media only screen and (max-width: 600px) {
   .sticky-macbook {
     position: relative;
-    transform: none;
+    top: auto;
+    margin-top: 245px;
     height: auto;
+  }
+}
+
+/* ท้ายคอลัมน์ Services : เดิม pb-200 เผื่อที่ให้ภาพ sticky ที่ถูกปล่อยเร็วเกินไป
+   พอแก้ sticky ให้ปล่อยถูกจังหวะแล้ว จึงลดลงได้ เพื่อไม่ให้ห่างจาก section Process มากเกินไป */
+@media only screen and (min-width: 768px) {
+  .pb-200.svc-col-end {
+    padding-bottom: 40px;
   }
 }
 
@@ -2193,11 +2203,7 @@ export default {
   }
 
   .zoning-list .zone-yellow {
-    width: calc(84% + var(--bleed));
-  }
-
-  .zoning-list .zone-orange {
-    width: calc(92% + var(--bleed));
+    width: calc(88% + var(--bleed));
   }
 
   .zoning-list .zone-red {
@@ -2257,9 +2263,14 @@ export default {
 }
 
 /* ลูกศร trending ขึ้น (เดคอเรชันวางหน้าการ์ด ฝั่งซ้ายของกลุ่มการ์ด) */
+/* กล่องลูกศรสูงเท่า layout พอดี (top + bottom) แล้วให้ SVG ย่อลงให้พอดีกล่อง
+   ไม่งั้นลูกศรจะสูงตามความกว้าง และเมื่อการ์ดโซนน้อยลง (layout เตี้ยลง)
+   หัวลูกศรจะโผล่พ้นด้านบนไปทับป้าย "Service Zoning"
+   preserveAspectRatio="xMinYMax" ยึดมุมซ้ายล่างไว้ที่เดิมตอนย่อ */
 .zoning-arrow {
   position: absolute;
   left: 18%;
+  top: 0;
   bottom: 0;
   width: 40%;
   z-index: 0;
@@ -2269,7 +2280,7 @@ export default {
 
 .zoning-arrow svg {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
 }
 
@@ -2348,7 +2359,6 @@ export default {
 /* เลขโซน : ใช้โทนม่วงอ่อนเหมือนกันทุกโซน / ชื่อโซนใช้สีประจำโซน */
 .zone-green .zoning-item-no,
 .zone-yellow .zoning-item-no,
-.zone-orange .zoning-item-no,
 .zone-red .zoning-item-no {
   color: #E9E4FE;
 }
@@ -2359,10 +2369,6 @@ export default {
 
 .zone-yellow .zoning-zone-name {
   color: #CA8A04;
-}
-
-.zone-orange .zoning-zone-name {
-  color: #E0700F;
 }
 
 .zone-red .zoning-zone-name {
