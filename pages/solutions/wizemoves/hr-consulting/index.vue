@@ -304,12 +304,12 @@
           <div class="col-lg-6 col-12">
             <img class="img-fluid" src="~/assets/SolutionsWizemoves/Consulting/wizemoves.png" alt="wizemoves.png">
           </div>
-          <div class="col-lg-6 col-12 d-flex align-items-center">
+          <div class="col-lg-6 col-12 d-flex align-items-center justify-content-center">
             <div class="text-center">
               <img class="img-fluid" style="width: 400px; max-width: 100%;" src="~/assets/SolutionsWizemoves/Consulting/wizemoves-hr-logo.png" alt="WizeMoves HR Business Solutions">
               <p class="text-s-44 font-bd mt-4">หยุดแก้ปัญหาคนเดียว</p>
               <p class="text-s-24 mb-lg-4 mb-4">ให้ WizeMoves HR ช่วยวางกลยุทธ์ด้าน HR
-                ทั้ง Structured HR Data, Performance Management และ Employer Branding</p>
+                ทั้ง Structured HR Data,<br />Performance Management และ Employer Branding</p>
               <nuxt-link :to="{ path: '/solutions/wizemoves/business-consulting/af' }"
                 class="btn-gradient text-s-24 font-md py-2" data-tag="pain_points_section_get_free_consultation">
                 <span class="text">ปรึกษาการวางกลยุทธ์ด้าน HR</span>
